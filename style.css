@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+.navbar > .holder{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar > .holder > img{
+    height: 50px;
+}
+.navbar > .holder > a{
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 2px solid #333;
+    color: #333;
+    font-size: 1.1em;
+    border-radius: 2px;
+}
+
+
+.container{
+    width: 1200px;
+    margin: auto;
+}
+
+.section1{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.section1 > div > h1{
+    font-weight: 500;
+    font-size: 2.6em;
+    width: 45%;
+}
+.section1 > div >  p{
+    font-size: 1em;
+    color: #888;
+    width: 45%;
+}
+
+
+.section2{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.section2 > img{
+    width: 40%;
+    height: auto;
+    margin-top: -100px;
+}
+.section2 > div{
+    width: 50%;
+    margin-top: 30px;
+}
+.section2 > div > h1{
+    font-size: 1.8em;
+    font-weight: 500;
+}
+.section2 > div > ul {
+    list-style-type: none;
+    padding: 0px;
+}
+.section2 > div > ul > li {
+    margin-bottom: 30px;
+}
+.section2 > div > ul > li > h3 {
+    font-weight: 500;
+    font-size: 1.4em;
+    margin: 5px 0px;
+}
+.section2 > div > ul > li > p {
+    width: 80%;
+    color: #888;
+}
+
+
+.blackBox{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.blackBox > div{
+    height: 100%;
+    width: 70%;
+    background: #222;
+}
