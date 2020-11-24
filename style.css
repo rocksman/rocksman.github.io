@@ -30,7 +30,7 @@ body{
     padding: 5px 10px;
     border: 2px solid #333;
     color: #333;
-    font-size: 1.1em;
+    font-size: 1em;
     border-radius: 2px;
 }
 
@@ -107,4 +107,59 @@ body{
     height: 100%;
     width: 70%;
     background: #222;
+}
+
+
+
+@media only screen and (max-width: 980px) {
+    .navbar > .holder{
+        width: 90%;
+    }
+    .navbar > .holder > img{
+        height: 40px;
+    }
+    .navbar > .holder > a{
+        font-size: 0.8em;
+    }
+    .container{
+        width: 90%;
+        margin: auto;
+    }
+
+    .section1 > div > h1{
+        font-weight: 500;
+        font-size: 1.8em;
+        width: 100%;
+    }
+    .section1 > div >  p{
+        font-size: 1em;
+        color: #888;
+        width: 100%;
+    }
+
+    .section2{
+        flex-direction: column;
+    }
+    .section2 > img{
+        width: 100%;
+        margin-top: -150px;
+    }
+    .section2 > div{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .section2 > div > h1{
+        font-size: 1.8em;
+        font-weight: 500;
+    }
+    .section2 > div > ul > li > h3 {
+        font-weight: 500;
+        font-size: 1.2em;
+        margin: 5px 0px;
+    }
+    .section2 > div > ul > li > p {
+        width: 100%;
+        font-size: 1em;
+        color: #888;
+    }
 }
