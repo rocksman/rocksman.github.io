@@ -14,6 +14,7 @@ body{
     align-items: center;
     justify-content: center;
     background-color: #fff;
+    z-index: 100;
 }
 .navbar > .holder{
     width: 1200px;
@@ -32,6 +33,11 @@ body{
     color: #333;
     font-size: 1em;
     border-radius: 2px;
+    transition: 0.6s;
+}
+.navbar > .holder > a:hover{
+    background-color: #333;
+    color: #fff;
 }
 
 
@@ -52,6 +58,9 @@ body{
     font-size: 2.6em;
     width: 45%;
 }
+.section1 > div > h1 >span{
+    color: #ccc;
+}
 .section1 > div >  p{
     font-size: 1em;
     color: #888;
@@ -60,11 +69,12 @@ body{
 
 
 .section2{
-    height: 90vh;
+    min-height: 90vh;
     width: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 .section2 > img{
     width: 40%;
@@ -110,6 +120,52 @@ body{
 }
 
 
+.section3{
+    width: 100%;
+    background-color: #eee;
+    padding-bottom: 10px;
+}
+.section3 > .banner {
+    height: 400px;
+    background: url('college.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    /* filter: blur(4px); */
+    width: 100%;
+}
+.section3 > .banner > div{
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+}
+.section3 > .container {
+    margin-top: -120px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.section3 > .container > .content{
+    width: 40%;
+    z-index: 10;
+}
+.section3 > .container > .content > h1{
+    font-weight: 400;
+    color: #fff;
+    font-size: 1.6em;
+    margin-bottom: 80px;
+}
+.section3 > .container > .content > p{
+    color: #333;
+    font-size: 1.2em;
+}
+.section3 > .container > img {
+    width: 30%;
+    height: 500px;
+    object-fit: cover;
+    z-index: 10;
+    margin-top: 200px;
+}
 
 @media only screen and (max-width: 980px) {
     .navbar > .holder{
@@ -161,5 +217,22 @@ body{
         width: 100%;
         font-size: 1em;
         color: #888;
+    }
+    .section3 > .container {
+        margin-top: -120px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+    .section3 > .container > .content{
+        width: 100%;
+    }
+    .section3 > .container > .content > p{
+        font-size: 1em;;
+    }
+    .section3 > .container > img{
+        display: none;
     }
 }

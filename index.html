@@ -7,12 +7,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;900&display=swap"
         rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="./style.css">
     <title>Advika | Lawyer Agency</title>
 </head>
 
 <body>
-    <div class="navbar">
+    <div class="navbar" id="nav">
         <div class="holder">
             <img src="./logo.png" alt="logo">
             <a href="mailto:advikanayanabhonsle69@gmail.com">Contact me</a>
@@ -21,9 +23,10 @@
     <div class="container">
         <section class="section1">
             <div>
-                <h1>Aspiring Lawyer <br />
+                <h1 data-aos="fade-up"><span>Aspiring</span> Lawyer <br />
                     For And With The People</h1>
-                <p>The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced
+                <p data-aos="fade-up">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog.
+                    Junk MTV quiz graced
                     by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs
                     grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack.
                     Quick wafting zephyrs vex bold Jim. Quick zephyrs.</p>
@@ -35,30 +38,63 @@
     </div>
     <div class="container">
         <section class="section2">
-            <img src="./profile.jpeg" alt="profile">
+            <img src="./profile.jpeg" alt="profile" data-aos="fade-up">
             <div>
-                <h1>What Makes Me Different?</h1>
+                <h1 data-aos="fade-up">What Makes Me Different?</h1>
                 <ul>
-                    <li>
+                    <li data-aos="fade-up">
                         <h3>Justice Is Priotity</h3>
                         <p>Got into law for the sole reason to protect every citizens right and serve justice</p>
                     </li>
-                    <li>
+                    <li data-aos="fade-up">
                         <h3>Will Never Give Up</h3>
                         <p>Loyalty and determination are two of my valued virtues</p>
                     </li>
-                    <li>
+                    <li data-aos="fade-up">
                         <h3>Eye On The Goal</h3>
-                        <p>Having an eye for completion of any task has always been my favourite challenge and one of my best qualities</p>
+                        <p>Having an eye for completion of any task has always been my favourite challenge and one of my
+                            best qualities</p>
                     </li>
-                    <li>
+                    <li data-aos="fade-up">
                         <h3>Hardworking</h3>
-                        <p>Some might call it a curse but the satisfaction of doing the work I love for long hours is boon to me</p>
+                        <p>Some might call it a curse but the satisfaction of doing the work I love for long hours is
+                            boon to me</p>
                     </li>
                 </ul>
             </div>
         </section>
     </div>
+    <section class="section3">
+        <div class="banner">
+            <div></div>
+        </div>
+        <div class="container">
+            <div class="content">
+                <h1>BISHOP COTTON WOMEN’S CHRISTIAN LAW COLLEGE</h1>
+                <p>Pursued and accomplished the dream of being a lawyer with the help of some of the nicest and best
+                    group of teachers who helped me get through each year of college with confidence.</p>
+                <p>Studied with passion throughout the course to achieve the dream of becoming a lawyer, and reaped a 
+                    small reward of being the valedictorian of my batch.
+                </p>
+            </div>
+            <img src="./student.jpeg" alt="">
+        </div>
+    </section>
 </body>
+<script>
+    AOS.init({
+        duration: 800
+    });
+    var myNav = document.getElementById('nav');
+    window.onscroll = function () {
+        let top = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        if (top >= 200) {
+            myNav.style.boxShadow = "0px 2px 4px 0px #ccc";
+        }
+        else {
+            myNav.style.boxShadow = "none";
+        }
+    };
+</script>
 
 </html>
